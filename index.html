@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWERFUL DAEGU - 자유와 활력이 넘치는 대구광역시</title>
+    <meta name="description" content="대한민국 IT·첨단 미래 신산업의 중심, 역사와 문화가 살아 숨 쉬는 파워풀 대구광역시에 오신 것을 환영합니다. ABB, 로봇, 반도체, 미래모빌리티, 헬스케어의 미래 비전을 만나보세요.">
+    <meta name="keywords" content="대구광역시, 파워풀대구, 대구관광, 대구5대산업, 도달쑤, 대구축제, 팔공산국립공원, 83타워">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.daegu.go.kr/">
+    <meta property="og:title" content="POWERFUL DAEGU - 대구광역시">
+    <meta property="og:description" content="자유와 활력이 넘치는 파워풀 대구! 5대 미래 신산업과 아름다운 명소들을 한눈에 만나보세요.">
+    <meta property="og:image" content="./assets/daegu_future_city.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Gradients -->
+    <div class="gradient-bg">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="glass-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-power">POWERFUL</span>
+                <span class="logo-daegu">DAEGU</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">시정비전</a></li>
+                    <li><a href="#industries" class="nav-link">5대 미래산업</a></li>
+                    <li><a href="#landmarks" class="nav-link">명소 & 문화</a></li>
+                    <li><a href="#dodalssoo" class="nav-link">도달쑤 Talk</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#dodalssoo" class="btn-primary-glow">스마트 안내</a>
+                <button class="mobile-toggle" aria-label="메뉴 열기">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-powerful animate-fade-in">
+                        <span class="pulse-dot"></span>자유와 활력이 넘치는 미래도시
+                    </div>
+                    <h1 class="hero-title animate-title">
+                        <span>POWERFUL</span>
+                        <span class="gradient-text">DAEGU</span>
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in-delayed">
+                        대구광역시는 끊임없는 혁신과 도전을 통해 첨단 미래 산업을 이끌고,<br>
+                        시민 모두가 행복과 번영을 누리는 일류 도시로 도약합니다.
+                    </p>
+                    <div class="hero-cta animate-fade-in-delayed">
+                        <a href="#industries" class="btn-gradient">미래 비전 알아보기</a>
+                        <a href="#landmarks" class="btn-outline">대구 여행하기</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual animate-visual">
+                    <div class="glass-card main-hero-card">
+                        <div class="card-glow"></div>
+                        <div class="card-inner">
+                            <div class="card-header">
+                                <span class="card-dot red"></span>
+                                <span class="card-dot yellow"></span>
+                                <span class="card-dot green"></span>
+                                <span class="card-title">DAEGU SMART CITY MONITOR</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <span class="stat-label">도시 국가 혁신 지수</span>
+                                        <span class="stat-val">TOP Tier</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">5대 신산업 성장률</span>
+                                        <span class="stat-val gradient-text-alt">148%</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">국립공원 지정</span>
+                                        <span class="stat-val">팔공산</span>
+                                    </div>
+                                </div>
+                                <div class="visual-placeholder" id="hero-illustration">
+                                    <!-- Fallback visualization / vector of 83 tower and waves -->
+                                    <svg viewBox="0 0 400 200" class="city-svg">
+                                        <defs>
+                                            <linearGradient id="towerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="#8B5CF6" />
+                                                <stop offset="100%" stop-color="#EC4899" />
+                                            </linearGradient>
+                                            <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="rgba(6, 182, 212, 0.4)" />
+                                                <stop offset="100%" stop-color="rgba(99, 102, 241, 0.1)" />
+                                            </linearGradient>
+                                        </defs>
+                                        <!-- Mountains (Palgongsan) -->
+                                        <path d="M 0 160 L 80 80 L 160 160 Z" fill="rgba(31, 41, 55, 0.8)" stroke="#4B5563" stroke-width="1"/>
+                                        <path d="M 100 160 L 220 50 L 320 160 Z" fill="rgba(17, 24, 39, 0.9)" stroke="#4B5563" stroke-width="1.5"/>
+                                        <!-- E-world 83 Tower schematic -->
+                                        <g transform="translate(280, 20)">
+                                            <line x1="40" y1="140" x2="40" y2="40" stroke="url(#towerGrad)" stroke-width="6" />
+                                            <path d="M 20 140 L 40 40 L 60 140 Z" fill="none" stroke="url(#towerGrad)" stroke-width="2" />
+                                            <ellipse cx="40" cy="50" rx="15" ry="6" fill="#8B5CF6" />
+                                            <polygon points="30,50 40,10 50,50" fill="url(#towerGrad)" />
+                                            <circle cx="40" cy="10" r="3" fill="#EC4899" class="beacon-glow" />
+                                        </g>
+                                        <!-- Sincheon River and City Lines -->
+                                        <path d="M 0 160 Q 150 120 400 170" fill="none" stroke="url(#waveGrad)" stroke-width="12" stroke-linecap="round"/>
+                                        <path d="M 0 175 Q 180 140 400 185" fill="none" stroke="url(#waveGrad)" stroke-width="6" opacity="0.6"/>
+                                        <!-- Tech Grid Points -->
+                                        <circle cx="80" cy="80" r="4" fill="#06B6D4" />
+                                        <circle cx="220" cy="50" r="4" fill="#EC4899" />
+                                        <line x1="80" y1="80" x2="220" y2="50" stroke="rgba(255,255,255,0.15)" stroke-dasharray="4" />
+                                    </svg>
+                                    <div class="overlay-badge">Smart City Tech</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" class="mouse-scroll">
+                    <span class="mouse-wheel"></span>
+                </a>
+                <span class="scroll-text">SCROLL DOWN</span>
+            </div>
+        </section>
+
+        <!-- About/Vision Section -->
+        <section id="about" class="section about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">시정 비전</h2>
+                    <p class="section-subtitle">자유와 활력이 넘치는 파워풀 대구의 핵심 가치</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="glass-card vision-card">
+                        <div class="icon-wrapper bg-gradient-purple">
+                            <!-- SVG Icon: Eagle or Flag (Freedom) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                        </div>
+                        <h3>자유 (Freedom)</h3>
+                        <p>규제 개혁과 창의적인 비즈니스 환경 조성을 통해 기업과 개인이 마음껏 역량을 펼치고 성장할 수 있는 자유의 기회를 보장합니다.</p>
+                    </div>
+
+                    <div class="glass-card vision-card">
+                        <div class="icon-wrapper bg-gradient-cyan">
+                            <!-- SVG Icon: Thunder/Energy (Vitality) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        </div>
+                        <h3>활력 (Vitality)</h3>
+                        <p>일자리가 넘쳐나고 청년들이 유입되는 다이나믹한 도시 생태계를 구축하여 지역 전체에 끊임없는 혁신의 에너지와 활력을 불어넣습니다.</p>
+                    </div>
+
+                    <div class="glass-card vision-card">
+                        <div class="icon-wrapper bg-gradient-pink">
+                            <!-- SVG Icon: Star/Rocket (Powerful) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 3.4-2 3.4s2.14-.5 3.4-2c1.47-1.75 3.66-4.5 6.1-7.5l-3-3c-3 2.44-5.75 4.63-7.5 6.1z"></path><path d="M12 12l9-9"></path><path d="M16 4h4v4"></path></svg>
+                        </div>
+                        <h3>글로벌 도약 (Powerful)</h3>
+                        <p>통합신공항 건설과 5대 신산업의 성공적인 안착을 통해 영남권 경제지도를 재편하고 글로벌 중심 도시로 강력하게 우뚝 섭니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5 Future Industries Section -->
+        <section id="industries" class="section industries-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div class="header-tag">FUTURE ENGINE</div>
+                    <h2 class="section-title">5대 미래 신산업</h2>
+                    <p class="section-subtitle">대구의 내일을 책임질 핵심 5대 신산업 생태계</p>
+                </div>
+
+                <div class="industry-grid">
+                    <!-- ABB Card -->
+                    <div class="glass-card industry-card" data-industry="abb">
+                        <div class="card-bg-glow"></div>
+                        <div class="industry-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                <circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>ABB</h3>
+                        <span class="industry-tag">AI · Big Data · Blockchain</span>
+                        <p>수성알파시티를 중심으로 비수도권 최대 IT/ABB 융합 클러스터를 구축하여 디지털 혁신을 주도합니다.</p>
+                        <div class="card-action">상세 비전 <span class="arrow">&rarr;</span></div>
+                    </div>
+
+                    <!-- Robot Card -->
+                    <div class="glass-card industry-card" data-industry="robot">
+                        <div class="card-bg-glow"></div>
+                        <div class="industry-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                                <circle cx="12" cy="5" r="2"/>
+                                <path d="M12 7v4M8 15h.01M16 15h.01M9 11V9a3 3 0 0 1 6 0v2"/>
+                            </svg>
+                        </div>
+                        <h3>로봇 (Robot)</h3>
+                        <span class="industry-tag">로봇산업 글로벌 수도</span>
+                        <p>국가로봇테스트필드를 유치하여 서비스 및 제조 로봇 인프라와 실증, 연구개발의 메카로 성장하고 있습니다.</p>
+                        <div class="card-action">상세 비전 <span class="arrow">&rarr;</span></div>
+                    </div>
+
+                    <!-- Semiconductor Card -->
+                    <div class="glass-card industry-card" data-industry="semiconductor">
+                        <div class="card-bg-glow"></div>
+                        <div class="industry-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="5" y="5" width="14" height="14" rx="2"/>
+                                <path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4M9 9h6v6H9z"/>
+                            </svg>
+                        </div>
+                        <h3>반도체 (Semiconductor)</h3>
+                        <span class="industry-tag">센서반도체 허브</span>
+                        <p>대구경북과학기술원(DGIST)과 유기적으로 연계하여 비메모리 및 차량용 센서 반도체 특화 클러스터를 조성합니다.</p>
+                        <div class="card-action">상세 비전 <span class="arrow">&rarr;</span></div>
+                    </div>
+
+                    <!-- Future Mobility Card -->
+                    <div class="glass-card industry-card" data-industry="mobility">
+                        <div class="card-bg-glow"></div>
+                        <div class="industry-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 15h12m-9 0a3 3 0 1 1-6 0M21 15h-3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3M18 19a3 3 0 1 1-6 0"/>
+                                <path d="m14 9-3-3-3 3M11 6v10"/>
+                            </svg>
+                        </div>
+                        <h3>미래모빌리티</h3>
+                        <span class="industry-tag">UAM · 친환경 전기차</span>
+                        <p>하늘을 나는 도심항공교통(UAM) 실증 노선 개척 및 친환경 스마트 모빌리티 부품 전문 도시로 전환합니다.</p>
+                        <div class="card-action">상세 비전 <span class="arrow">&rarr;</span></div>
+                    </div>
+
+                    <!-- Healthcare Card -->
+                    <div class="glass-card industry-card" data-industry="healthcare">
+                        <div class="card-bg-glow"></div>
+                        <div class="industry-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                                <path d="M12 9v6M9 12h6"/>
+                            </svg>
+                        </div>
+                        <h3>헬스케어 (Healthcare)</h3>
+                        <span class="industry-tag">디지털 헬스케어 선도</span>
+                        <p>첨단의료복합단지를 거점으로 스마트 웰니스, 디지털 헬스케어 기기 및 의료용 AI 솔루션 허브를 구축합니다.</p>
+                        <div class="card-action">상세 비전 <span class="arrow">&rarr;</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landmarks & Culture Section -->
+        <section id="landmarks" class="section landmarks-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="header-tag">VISIT DAEGU</div>
+                    <h2 class="section-title">명소 & 문화 축제</h2>
+                    <p class="section-subtitle">과거와 미래, 자연과 문화가 아름답게 어우러진 매력적인 대구</p>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">전체보기</button>
+                        <button class="filter-btn" data-filter="landmark">주요 명소</button>
+                        <button class="filter-btn" data-filter="festival">축제 & 먹거리</button>
+                    </div>
+                </div>
+
+                <div class="landmarks-grid">
+                    <!-- Palgongsan -->
+                    <div class="glass-card landmark-item show" data-category="landmark" data-id="palgong">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#127963;</span>
+                            <span class="bg-badge">NATIONAL PARK</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">관광명소</span>
+                            <h3>팔공산 국립공원</h3>
+                            <p>대한민국의 23번째 국립공원! 소원성취의 명소로 유명한 '갓바위'와 수려한 계곡을 자랑하는 대구의 명산입니다.</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- 83 Tower -->
+                    <div class="glass-card landmark-item show" data-category="landmark" data-id="tower">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#128508;</span>
+                            <span class="bg-badge">LANDMARK</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">관광명소</span>
+                            <h3>83타워 & 이월드</h3>
+                            <p>대구 시내를 한눈에 조망할 수 있는 83타워와 사계절 축제가 열리는 대형 테마파크 이월드에서 낭만 가득한 추억을 만들어보세요.</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Kim Kwang-seok Road -->
+                    <div class="glass-card landmark-item show" data-category="landmark" data-id="kim">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#127928;</span>
+                            <span class="bg-badge">CULTURE</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">관광명소</span>
+                            <h3>김광석 다시그리기 길</h3>
+                            <p>가객 고(故) 김광석의 아름다운 멜로디와 스토리가 골목 벽화와 어우러져 아날로그적 감성을 가득 담아내는 감성 문화거리입니다.</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Chimac Festival -->
+                    <div class="glass-card landmark-item show" data-category="festival" data-id="chimac">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#127831;</span>
+                            <span class="bg-badge">FESTIVAL</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">축제 & 먹거리</span>
+                            <h3>대구 치맥 페스티벌</h3>
+                            <p>매년 여름 대구 두류공원에서 열리는 대한민국 대표 축제! 세계적인 브랜드 치킨과 시원한 맥주를 음악과 함께 즐기는 K-푸드 축제입니다.</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Seomun Market -->
+                    <div class="glass-card landmark-item show" data-category="landmark" data-id="seomun">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#127857;</span>
+                            <span class="bg-badge">TRADITION</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">관광명소 & 먹거리</span>
+                            <h3>서문시장 야시장</h3>
+                            <p>조선시대 3대 시장 중 하나인 유서 깊은 서문시장! 밤이 되면 다채로운 야외 푸드 트럭과 문화 공연이 어우러지는 대구 대표 야간 관광지입니다.</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+
+                    <!-- Daegu Food (Makchang/Flat Dumplings) -->
+                    <div class="glass-card landmark-item show" data-category="festival" data-id="food">
+                        <div class="landmark-img-placeholder text-center">
+                            <span class="icon">&#127858;</span>
+                            <span class="bg-badge">LOCAL FOOD</span>
+                        </div>
+                        <div class="landmark-info">
+                            <span class="landmark-cat">먹거리</span>
+                            <h3>대구 10미 (味)</h3>
+                            <p>쫄깃하고 고소한 막창구이부터 매콤달콤 양념의 평평하고 담백한 납작만두 등 오직 대구에서만 진짜 맛을 느낄 수 있는 대표 10미!</p>
+                            <button class="btn-text">자세히 보기 &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dodalssoo Interactive Widget -->
+        <section id="dodalssoo" class="section dodalssoo-section scroll-reveal">
+            <div class="container">
+                <div class="dodalssoo-container glass-card">
+                    <div class="dodalssoo-visual">
+                        <!-- Mascot Avatar with Floating Effect -->
+                        <div class="otter-avatar-wrap">
+                            <div class="avatar-glow"></div>
+                            <!-- Cute Otter illustration using inline SVG -->
+                            <svg class="otter-svg" viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="85" fill="#E0F2FE" stroke="#0284C7" stroke-width="4"/>
+                                <!-- Ears -->
+                                <circle cx="50" cy="60" r="18" fill="#F8FAFC" stroke="#0284C7" stroke-width="3"/>
+                                <circle cx="50" cy="60" r="10" fill="#BAE6FD" />
+                                <circle cx="150" cy="60" r="18" fill="#F8FAFC" stroke="#0284C7" stroke-width="3"/>
+                                <circle cx="150" cy="60" r="10" fill="#BAE6FD" />
+                                <!-- Face structure -->
+                                <ellipse cx="100" cy="115" rx="55" ry="45" fill="#F8FAFC" stroke="#0284C7" stroke-width="3"/>
+                                <ellipse cx="100" cy="120" rx="45" ry="32" fill="#FFFFFF"/>
+                                <!-- Eyes -->
+                                <circle cx="78" cy="98" r="8" fill="#1E293B"/>
+                                <circle cx="76" cy="95" r="3" fill="#FFFFFF"/>
+                                <circle cx="122" cy="98" r="8" fill="#1E293B"/>
+                                <circle cx="120" cy="95" r="3" fill="#FFFFFF"/>
+                                <!-- Blushing cheeks -->
+                                <ellipse cx="65" cy="112" rx="10" ry="7" fill="#FDA4AF" opacity="0.8"/>
+                                <ellipse cx="135" cy="112" rx="10" ry="7" fill="#FDA4AF" opacity="0.8"/>
+                                <!-- Nose & Snout -->
+                                <polygon points="100,108 92,116 108,116" fill="#0F172A" />
+                                <path d="M 94 122 Q 100 128 100 122 Q 100 128 106 122" fill="none" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+                                <!-- Whiskers -->
+                                <line x1="45" y1="115" x2="25" y2="112" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+                                <line x1="45" y1="123" x2="22" y2="125" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+                                <line x1="155" y1="115" x2="175" y2="112" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+                                <line x1="155" y1="123" x2="178" y2="125" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+                                <!-- Daegu logo cap/pin badge -->
+                                <polygon points="100,30 85,50 115,50" fill="#0284C7" />
+                                <circle cx="100" cy="43" r="5" fill="#38BDF8" />
+                            </svg>
+                        </div>
+                        <div class="mascot-badge">대구 수달 도달쑤</div>
+                    </div>
+                    
+                    <div class="dodalssoo-chat">
+                        <div class="chat-header">
+                            <h3>도달쑤와 함께하는 스마트 토크</h3>
+                            <span class="status-online"><span class="pulse-dot"></span>안내 수달 항시 대기중</span>
+                        </div>
+                        <div class="chat-box" id="chat-box">
+                            <div class="message bot">
+                                <div class="msg-bubble">
+                                    안녕! 나는 신천에 살고 있는 귀여운 수달 대구 홍보대사 <strong>도달쑤</strong>야! 🦦<br>
+                                    자유와 활력이 가득 찬 파워풀 대구에 대해 궁금한 점을 물어봐!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-suggestions">
+                            <button class="suggest-btn" data-question="q1">대구의 5대 신산업이 뭐야?</button>
+                            <button class="suggest-btn" data-question="q2">대구에서 꼭 먹어봐야 할 먹거리 추천해줘!</button>
+                            <button class="suggest-btn" data-question="q3">여름 축제 '치맥 페스티벌' 정보 알려줘!</button>
+                            <button class="suggest-btn" data-question="q4">팔공산 국립공원의 매력은?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for details -->
+    <div id="info-modal" class="modal-overlay">
+        <div class="glass-card modal-card">
+            <button class="modal-close" aria-label="닫기">&times;</button>
+            <div class="modal-body" id="modal-content">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-power">POWERFUL</span>
+                    <span class="logo-daegu">DAEGU</span>
+                </div>
+                <p class="footer-desc">대한민국의 미래를 이끄는 역동적인 스마트 메트로폴리스</p>
+                <div class="footer-socials">
+                    <!-- Clean SVGs for Social Icons -->
+                    <a href="https://www.facebook.com/colorfuldaegu" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com/daegu_city/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://www.youtube.com/user/colorfuldaegu" target="_blank" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>시정 비전</h4>
+                    <ul>
+                        <li><a href="#about">핵심 가치</a></li>
+                        <li><a href="#industries">첨단 신산업</a></li>
+                        <li><a href="https://www.daegu.go.kr" target="_blank">대구광역시청 공식 홈</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>도시 라이프</h4>
+                    <ul>
+                        <li><a href="#landmarks">명소 추천</a></li>
+                        <li><a href="#landmarks">축제 소식</a></li>
+                        <li><a href="#dodalssoo">수달 도달쑤</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Daegu Metropolitan City. All Rights Reserved. (MOCK PAGE)</p>
+                <div class="footer-terms">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
